@@ -34,4 +34,4 @@ This loads the script on to your site.
 
 Great , now its loaded and you showuld see in your console when you refresh the page
 
-![alt text](https://imgur.com/Uq7LKecg)
+![alt text](https://imgur.com/Uq7LKec)
