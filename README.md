@@ -50,7 +50,7 @@ setCookie("age","15",365);
 Note: you can do this in the console using chrome dev tools
 this sets a cookie called age you can see your cookies by going into the application tab and click on cookies here you can manage your cookies
 
-![Screenshot](images/images/cookie.png)
+![Screenshot](images/cookie.png)
 
 
 and as always cookie go mmmmmm :)
