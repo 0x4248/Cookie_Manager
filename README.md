@@ -1,4 +1,4 @@
-# Cookie manager v1.0
+# Cookie manager v1.1
 ![Screenshot](images/banner.png)
 
 What is  cookie manager? Its a simple, lightweight JavaScript for handling cookies
