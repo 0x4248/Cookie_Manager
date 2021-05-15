@@ -5,14 +5,14 @@
 var Say_hello = true    //says hello
 var Use_debug = true    //shows debug info
 //[SCRIPT]
-var ver = 1.1
+var ver = 1.2
 
 if(Say_hello = true){
     var today = new Date();
     var h = today.getHours();
     var m = today.getMinutes();
     var s = today.getSeconds();
-    console.log("%c[COOKIE_MANAGER] "+"%c["+h+":"+m+":"+s+"] Started Script and listening for Fn call [V"+ver+"]","color: rgb(0, 255, 94);","color: auto;")
+    console.log("%c[COOKIE_MANAGER] "+"%c["+h+":"+m+":"+s+"] Started Script and listening for function call [V"+ver+"]","color: rgb(0, 255, 94);","color: auto;")
 }
 
 
@@ -76,5 +76,22 @@ function eraseCookie(name) {
         var m = today.getMinutes();
         var s = today.getSeconds();
         console.log("%c[COOKIE_MANAGER] "+"%c["+h+":"+m+":"+s+"] The cookie:"+name+" no longer exists","color: rgb(0, 255, 94);","color: auto;")
+    }
+}
+
+function listCookies(){
+    var pairs = document.cookie.split(";");
+    var cookies = {};
+    for (var i=0; i<pairs.length; i++){
+      var pair = pairs[i].split("=");
+      cookies[(pair[0]+'').trim()] = unescape(pair.slice(1).join('='));
+    }
+    if(Use_debug == true){
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        console.log("%c[COOKIE_MANAGER] "+"%c["+h+":"+m+":"+s+"] Listed all cookies","color: rgb(0, 255, 94);","color: auto;")
+    return cookies;
     }
 }
