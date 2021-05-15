@@ -13,6 +13,7 @@ if(Say_hello = true){
     var m = today.getMinutes();
     var s = today.getSeconds();
     console.log("%c[COOKIE_MANAGER] "+"%c["+h+":"+m+":"+s+"] Started Script and listening for function call [V"+ver+"]","color: rgb(0, 255, 94);","color: auto;")
+    console.log("%c[COOKIE_MANAGER] "+"%c["+h+":"+m+":"+s+"]  GitHub:https://github.com/awesomelewis2007/Cookie_Manager","color: rgb(0, 255, 94);","color: auto;")
 }
 
 
