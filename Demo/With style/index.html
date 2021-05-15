@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    
+    <!--cookie manager-->
+    <script type="text/javascript" src="Cookie_Manager.js"></script>
+    <body>
+        <style>
+            @media (prefers-color-scheme: dark) {
+              html{
+                background-color: #2b2b2b;
+                color: #FFFFFF;
+              }
+            }
+
+            @media (prefers-color-scheme: light) {
+              html{
+                background-color: #FFFFFF;
+                color: #2b2b2b;
+              }
+            }
+
+
+            html{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .box {
+              margin: auto;
+              width: 50%;
+              border-radius: 10px;
+              padding: 10px;
+              margin-top: 50px;
+              background-color: #515151;
+              box-shadow: 0px 0px 10px rgb(35, 35, 35);
+              
+            }
+            input {
+                border-radius: 5px;
+                border: 5px white;
+                background-color: #737373;
+                color: white;
+                padding: 5px;
+            }
+            @keyframes name_hover {
+                0% {border-radius: 5px;}
+                0% {border-radius: 10px;}
+            }
+            .submit{
+                border: 0px white;
+                border-radius: 10px;
+                background-color: rgb(137, 137, 137);
+                box-shadow: 0px 0px 5px rgb(47, 47, 47);
+                color: white;
+            }
+            .defo{
+                color: rgb(213, 213, 213);
+                background-color: #444444;
+                padding: 5px 10px 10px 5px;
+                border-radius: 10px;
+
+            }
+            .command{
+                color: rgb(189, 254, 255);
+                background-color: #444444;
+                padding: 5px 10px 10px 5px;
+                border-radius: 10px;
+                font-family: 'Courier New', Courier, monospace; 
+            }
+        </style>
+        <script>
+            function Cookie_make(){
+                var cookie_name = document.getElementById('Cookie_name');
+                var full_cookie_name = cookie_name.value;
+                var cookie_data = document.getElementById('Cookie_data');
+                var full_cookie_data = cookie_data.value;
+                setCookie(full_cookie_name,full_cookie_data,1);
+                alert("Cool now your cookie is made dont worry this expires after 1 day \nalso you can check the terminal/javascript_console for the logging of what just happend")
+            }
+        </script>
+        <noscript>
+            <div class="box">
+                <p>You need to enable javascript!!!!</p>
+            </div>
+        </noscript>
+        <div class="box">
+            <h2>Cookie Test</h2>
+            <p>Cooke name: <input type="text" id="Cookie_name"></p>
+            <p>Cooke data: <input type="text" id="Cookie_data"></p>
+            <button class="submit" onclick="Cookie_make()">MAKE MY COOKIE</button>
+        </div>
+        <div class="box">
+            <h2>Cookie policy</h2>
+            <p>this site uses cookies by using the experement above you accept our cookies yum...</p>
+        </div>
+        <div class="box">
+            <h2>Cookie what cookie?</h2>
+            <h3>What is a cookie</h3>
+            <p class="defo">An HTTP cookie is a small piece of data stored on the user's computer by the web browser while browsing a website. Cookies were designed to be a reliable mechanism for websites to remember stateful information or to record the user's browsing activity.</p>
+            <h3>Should i remove Cookies</h3>
+            <p class="defo">When you delete cookies from your computer, you erase information saved in your browser, including your account passwords, website preferences, and settings. Deleting your cookies can be helpful if you share your computer or device with other people and don't want them to see your browsing history.</p>
+        </div>
+        <div class="box">
+            <h2>Cookie Manager</h2>
+            <h3>what is cookie manager?</h3>
+            <p class="defo"> Cookie manager is a quick and simeple manager for your cookies. This Cookie manager uses quick commands to manage cookies like this</p>
+            <p class="command">setCookie("name","data",1)</p>
+            <p class="command">getCookie("name")</p>
+            <p class="command">eraseCookie("name")</p>
+            <a href="https://github.com/awesomelewis2007/Cookie_Manager">Go to Cookie Manager Github -></a>
+        </div>
+
+    </body>
+</html>
