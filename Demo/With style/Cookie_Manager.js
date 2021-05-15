@@ -67,7 +67,7 @@ function eraseCookie(name) {
         var h = today.getHours();
         var m = today.getMinutes();
         var s = today.getSeconds();  
-        console.log("%c[COOKIE_MANAGER] "+"%c["+h+":"+m+":"+s+"] Removeing cookie:"+name,"color: rgb(0, 255, 94);","color: auto;")
+        console.log("%c[COOKIE_MANAGER] "+"%c["+h+":"+m+":"+s+"] Removing cookie:"+name,"color: rgb(0, 255, 94);","color: auto;")
     }
     document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     if(Use_debug == true){
