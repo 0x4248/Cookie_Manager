@@ -12,8 +12,8 @@ if(Say_hello = true){
     var h = today.getHours();
     var m = today.getMinutes();
     var s = today.getSeconds();
-    console.log("%c[COOKIE_MANAGER] "+"%c["+h+":"+m+":"+s+"] Started Script and listening for function call [V"+ver+"]","color: rgb(0, 255, 94);","color: auto;")
-    console.log("%c[COOKIE_MANAGER] "+"%c["+h+":"+m+":"+s+"]  GitHub:https://github.com/awesomelewis2007/Cookie_Manager","color: rgb(0, 255, 94);","color: auto;")
+    console.log("%c[COOKIE MANAGER] "+"%c["+h+":"+m+":"+s+"] Started Script and listening for function call [V"+ver+"]","color: rgb(0, 255, 94);","color: auto;")
+    console.log("%c[COOKIE MANAGER] "+"%c["+h+":"+m+":"+s+"]  GitHub:https://github.com/awesomelewis2007/Cookie_Manager","color: rgb(0, 255, 94);","color: auto;")
 }
 
 
@@ -24,8 +24,8 @@ function setCookie(name,value,days) {
             var h = today.getHours();
             var m = today.getMinutes();
             var s = today.getSeconds();
-            console.log("%c[COOKIE_MANAGER] "+"%c["+h+":"+m+":"+s+"] Starting to Set cookie","color: rgb(0, 255, 94);","color: auto;")
-            console.log("%c[COOKIE_MANAGER] "+"%c["+h+":"+m+":"+s+"] Cookie_name:"+name+" Data:"+value+" Expires:"+days,"color: rgb(0, 255, 94);","color: auto;")  
+            console.log("%c[COOKIE MANAGER] "+"%c["+h+":"+m+":"+s+"] Starting to Set cookie","color: rgb(0, 255, 94);","color: auto;")
+            console.log("%c[COOKIE MANAGER] "+"%c["+h+":"+m+":"+s+"] Cookie_name:"+name+" Data:"+value+" Expires:"+days,"color: rgb(0, 255, 94);","color: auto;")  
     }
 
     var expires = "";
@@ -40,7 +40,7 @@ function setCookie(name,value,days) {
         var h = today.getHours();
         var m = today.getMinutes();
         var s = today.getSeconds();
-        console.log("%c[COOKIE_MANAGER] "+"%c["+h+":"+m+":"+s+"] Cookie_name:"+name+" has been set:","color: rgb(0, 255, 94);","color: auto;") 
+        console.log("%c[COOKIE MANAGER] "+"%c["+h+":"+m+":"+s+"] Cookie_name:"+name+" has been set:","color: rgb(0, 255, 94);","color: auto;") 
     }
 }
 
@@ -50,7 +50,7 @@ function getCookie(name) {
         var h = today.getHours();
         var m = today.getMinutes();
         var s = today.getSeconds();
-        console.log("%c[COOKIE_MANAGER] "+"%c["+h+":"+m+":"+s+"] Reading cookie: "+name,"color: rgb(0, 255, 94);","color: auto;")
+        console.log("%c[COOKIE MANAGER] "+"%c["+h+":"+m+":"+s+"] Reading cookie: "+name,"color: rgb(0, 255, 94);","color: auto;")
     }
     var nameEQ = name + "=";
     var ca = document.cookie.split(';');
@@ -68,7 +68,7 @@ function eraseCookie(name) {
         var h = today.getHours();
         var m = today.getMinutes();
         var s = today.getSeconds();  
-        console.log("%c[COOKIE_MANAGER] "+"%c["+h+":"+m+":"+s+"] Removeing cookie:"+name,"color: rgb(0, 255, 94);","color: auto;")
+        console.log("%c[COOKIE MANAGER] "+"%c["+h+":"+m+":"+s+"] Removeing cookie:"+name,"color: rgb(0, 255, 94);","color: auto;")
     }
     document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     if(Use_debug == true){
@@ -76,7 +76,7 @@ function eraseCookie(name) {
         var h = today.getHours();
         var m = today.getMinutes();
         var s = today.getSeconds();
-        console.log("%c[COOKIE_MANAGER] "+"%c["+h+":"+m+":"+s+"] The cookie:"+name+" no longer exists","color: rgb(0, 255, 94);","color: auto;")
+        console.log("%c[COOKIE MANAGER] "+"%c["+h+":"+m+":"+s+"] The cookie:"+name+" no longer exists","color: rgb(0, 255, 94);","color: auto;")
     }
 }
 
@@ -92,7 +92,7 @@ function listCookies(){
         var h = today.getHours();
         var m = today.getMinutes();
         var s = today.getSeconds();
-        console.log("%c[COOKIE_MANAGER] "+"%c["+h+":"+m+":"+s+"] Listed all cookies","color: rgb(0, 255, 94);","color: auto;")
+        console.log("%c[COOKIE MANAGER] "+"%c["+h+":"+m+":"+s+"] Listed all cookies","color: rgb(0, 255, 94);","color: auto;")
     return cookies;
     }
 }
