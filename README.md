@@ -54,3 +54,7 @@ this sets a cookie called age you can see your cookies by going into the applica
 
 
 and as always cookie go mmmmmm :)
+
+## Licence
+
+This project is licenced under the GNU General Public License v3.0. See the [LICENCE](LICENCE) file for more information.
